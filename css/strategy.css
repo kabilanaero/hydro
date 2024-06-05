@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.strategy-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.strategy-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.strategy-col1 {
+    width: 50%;
+}
+.strategy-col1-head{
+    width: 100%;
+}
+
+.strategy-col2 {
+    width: 50%;
+}
+
+.strategy-col3 {
+    width: 50%;
+}
+
+.strategy-col4 {
+    width: 50%;
+}
+
+.strategy-col-gap1 {
+    margin: 70px 50px 70px 50px;
+    padding: 1px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.strategy-col-gap2 {
+    margin: 120px 0px 70px 100px;
+    padding: 1px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.strategy-para1 {
+    text-align: left;
+    font-size: 15px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.strategy-para2 {
+    text-align: left;
+    font-size: 15px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+#strategy-btn {
+    padding: 7px 15px;
+    margin: 30px 3px 0px 0px;
+    float: right;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    font-weight: bold;
+    font-size: medium;
+    border: gold;
+    border-radius: 4px;
+    background-color: gold;
+    font-stretch: extra-condensed;
+}
+
+#strategy-btn:hover {
+    background-color: #686767;
+    color: white;
+    border: ridge 1px;
+    border-color: black;
+}
+
+.strategy-col1-head{
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 20px;
+    color: #021b35;
+  }
+  
+  .strategy-col1-head::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: yellow;
+    top: 50px;
+    left: 0px;
+    position: absolute;
+  }
+
+.strategy-col-gap-img1 {
+    margin: 0px 0px -157px 22px;
+    padding: 0px 0px 0px 5px;
+}
+
+.strategy-col-gap-img2 {
+    margin: 39px 50px 0px -55px;
+    padding: 0px 0px 0px 5px;
+}
+
+.strategy-banner {
+        background-image: url(image/Strategy.jpg);
+        width: 100%;
+        height: 450px;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+}
+
+@media (min-width:320px) {
+    .strategy-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .strategy-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .strategy-col1 {
+        width: 100%;
+    }
+
+    .strategy-col1 h1 {
+        font-size: 28px;
+    }
+    .strategy-col-gap1 {
+        width: 90%;
+        margin: auto;
+        padding: 1px;
+        margin: 60px 0px;
+    }
+
+    .strategy-col2 {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .strategy-col-gap-img1 {
+        width: 90%;
+        margin-left: -20px;
+        /* padding: 0px 0px 0px 5px; */
+    }
+
+    .strategy-col-gap-img1 img{
+        width: 280px;
+        height: 200px;
+
+    }
+
+    .strategy-col-gap-img2 {
+        width: 90%;
+        margin-left: -20px;
+        /* padding: 0px 0px 0px 5px; */
+    }
+
+    .strategy-col-gap-img2 img{
+        width: 250px;
+        height: 180px;
+
+    }
+
+    .strategy-btn {
+        width: 100%;
+        margin: auto;
+    }
+
+    .strategy-col3 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .strategy-col4 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .strategy-col-gap-img2 {
+        width: 90%;
+        height: 100%;
+        margin: 180px 0px 20px 0px;
+    }
+
+    .strategy-col-gap2 {
+        width: 90%;
+        margin: auto;
+        padding: 1px;
+        margin: 60px 0px;
+    }
+
+    .strategy-btn {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width:760px) {
+    .strategy-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .strategy-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .strategy-col1 {
+        width: 100%;
+    }
+
+    .strategy-col1 h1 {
+        font-size: 40px;
+    }
+
+    .strategy-col-gap1 {
+        width: 90%;
+        margin: auto;
+        padding: 1px;
+        margin: 60px 0px;
+    }
+
+    .strategy-col2 {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .strategy-col-gap-img1 {
+        width: 90%;
+        margin-left: -20px;
+        /* padding: 0px 0px 0px 5px; */
+    }
+
+    .strategy-col-gap-img1 img{
+        width: 500px;
+        height: 250px;
+        margin-left: 80px;
+
+    }
+
+    .strategy-col-gap-img2 {
+        width: 90%;
+        margin-left: -20px;
+        /* padding: 0px 0px 0px 5px; */
+    }
+
+    .strategy-col-gap-img2 img{
+        width: 500px;
+        height: 250px;
+        margin-left:  60px;
+
+    }
+
+    .strategy-btn {
+        width: 100%;
+        margin: auto;
+    }
+
+    .strategy-col3 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .strategy-col4 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .strategy-col-gap-img2 {
+        width: 90%;
+        height: 100%;
+        margin: 180px 0px 20px 0px;
+    }
+
+    .strategy-col-gap2 {
+        width: 90%;
+        margin: auto;
+        padding: 1px;
+        margin: 60px 0px;
+    }
+
+    .strategy-btn {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width:1020px) {
+    .strategy-container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .strategy-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .strategy-col1 {
+        width: 50%;
+    }
+
+    .strategy-col1 h1 {
+        font-size: 60px;
+    }
+
+    .strategy-col2 {
+        width: 50%;
+    }
+
+    .strategy-col-gap-img1 {
+        margin: 0px 0px -157px 32px;
+        padding: 0px 0px 0px 5px;
+    }
+
+
+    .strategy-col3 {
+        width: 50%;
+    }
+
+    .strategy-col4 {
+        width: 50%;
+    }
+
+    .strategy-col-gap2 {
+        margin: 120px 0px 70px 100px;
+        padding: 1px;
+    }
+
+}

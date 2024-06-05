@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product List</title>
+</head>
+<body>
+    <!-- ----------------------------navbar section----------------------------- -->
+    <section class="navbar">
+        <nav>
+            <div class="wrapper">
+              <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="about.html" class="desktop-item">Company</a>
+                  <input type="checkbox" id="showDrop">
+                  <label for="showDrop" class="mobile-item">Company</label>
+                  <ul class="drop-menu">
+                    <li><a href="strategy.html">Strategy & Purpose</a></li>
+                    <li><a href="product.html">Brands</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="product.html" class="desktop-item">Products</a>
+                  <input type="checkbox" id="showMega">
+                  <label for="showMega" class="mobile-item">Products</label>
+                  <div class="mega-box">
+                    <div class="content">
+                      <div class="row">
+                        <ul class="mega-links" style="border: none;">
+                            <li onclick="navigateToProduct(1)"><span>> Hydraulic Pumps</span></li>
+                            <li onclick="navigateToProduct(2)"><span>> Hydraulic Valves</span></li>
+                            <li onclick="navigateToProduct(3)"><span>> Power Packs</span></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="mega-links">
+                            <li onclick="navigateToProduct(4)"><span>> Hydraulic Fittings</span></li>
+                            <li onclick="navigateToProduct(5)"><span>> Industrail Valves</span></li>
+                            <li onclick="navigateToProduct(6)"><span>> Hydraulic Directional Control Valves</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <a href="industries.html" class="desktop-item">Industries</a>
+                    <input type="checkbox" id="showDrop1">
+                    <label for="showDrop1" class="mobile-item">Industries</label>
+                    <ul class="drop-menu">
+                        <li><a href="industries.html">Power</a></li>
+                        <li><a href="industries.html">Steel</a></li>
+                        <li><a href="industries.html">Plastic</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mechine Tools</a></li>
+                        <li><a href="industries.html">Marine</a></li>
+                    </ul>
+                  </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+          </nav>
+    </section>
+    <section class="product-banner">
+    </section>
+    <section class="product-section">
+        <div class="product-container">
+            <h2 class="product-heading">Hydro TORK Brands</h2>
+            <p class="product-para">
+                HYDRO TORK specializes in fabricating advanced hydraulic systems, leveraging top-tier hydraulic equipment to deliver unparalleled performance and reliability. The company also excels in automating industrial valves, ensuring precise and efficient control within various industrial applications.    
+            </p><br>
+            <div id="productPageRow" class="product-row"></div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

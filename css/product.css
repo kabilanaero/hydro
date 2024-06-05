@@ -1,0 +1,374 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .product-banner{
+    background-image: url(image/service-ban.png);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+  
+  /* ------------------------------------ section  ------------------------------------------- */
+  .product-container{
+    width: 90%;
+    margin: auto;
+  }
+  
+  .product-row{
+    display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 70px;
+  }
+  
+.productpage-col { 
+  width:33.3%;
+}
+.productpage-box { 
+    cursor: pointer; 
+    height: 50vh;
+    margin:20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.productpage-box:hover .productpage-para{
+  color: #021B35;
+  background-color: rgb(240, 198, 11);;
+}
+.productpage-image {
+  width: 100%;
+  height: 90%; /* Set a fixed height for the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid gray;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.productpage-image img { 
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  margin: 100px;
+}
+.productpage-para { 
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    background-color: #021B35;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 0px 0px 10px 10px;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+.arrow { 
+    margin-top: 10px; 
+}
+
+/* Basic styling for the details page */
+
+.product-heading{
+  font-size: 45px;
+  color: #021B35;
+  position: relative;
+}
+.product-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  background-color: rgb(240, 198, 11);
+  width: 100px;
+  top: 70px;
+  height: 4px;
+}
+.product-para{
+  padding-top: 30px;
+}
+
+
+/* ---------------------------------- inner products -------------------------------- */
+.product-ban{
+  background-image: url(image/ban1.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+  }
+.products-container{
+  width: 95%;
+  margin: auto;
+}
+.product-content{
+  display: flex;
+}
+.product-image{
+  width: 30%;
+}
+.product-image img { 
+    width: 100%; 
+    padding: 0px 40px 10px 40px;
+}
+.product-content-rightside{
+  width: 60%;
+  padding: 0px 40px;
+}
+.prod-heading{
+  font-size: 45px;
+  color: #021B35;
+  position: relative;
+}
+.prod-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  background-color: rgb(240, 198, 11);
+  width: 100px;
+  top: 70px;
+  height: 4px;
+}
+.prod-description{
+  padding: 30px 0px;
+  font-weight: bold;
+  color: #34373a;
+}
+.product-details{
+  font-size: medium;
+  padding-bottom: 10px;
+}
+.product-keypoints{
+  padding-left: 50px;
+}
+.wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap button{
+  width: 50%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #021b35;
+  color: #eee;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.wrap button:hover{
+  background-color: #eee;
+  color: #000;
+}
+.sub-products ul { 
+  list-style-type: none; 
+  padding: 0; 
+}
+.sub-products li { 
+  margin: 5px 0; 
+}
+.sub-products img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+/* -------------response--------------- */
+@media (min-width:320px) {
+  .product-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productpage-col {
+    width: 100%;
+  }
+}
+
+@media (min-width:760px) {
+  .product-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productpage-col {
+    width: 50%;
+  }
+}
+
+@media (min-width:1020px) {
+  .product-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productpage-col {
+    width: 33.3%;
+  }
+}
+
+
+
+/* ----------------------------- sub product --------------------------------- */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #021b35;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 650px;
+    height: 450px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .contacthead{
+    color: #eee;
+    font-size: 25px;
+  }
+  
+  .contactpara{
+    color: #eee;
+    font-size: 15px;
+  }
+  
+  
+  .form-container {
+    background-color: #021b35;
+    border-radius: 5px;
+    padding: 20px 60px;
+    width: 100%;
+    max-width: 500px;
+    color: #eee;
+  }
+  
+  
+  
+  
+  #name {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    background-color: #eee;
+    color: #0f0f0f;
+    border: none;
+    outline: none;
+  }
+  
+  #email {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    background-color: #eee;
+    color: #eee;
+    border: none;
+    outline: none;
+  }
+  
+  #phone {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    background-color: #eee;
+    color: #000;
+    border: none;
+    outline: none;
+  }
+  
+  
+  button {
+    background-color: rgb(110, 113, 138);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  button:hover {
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+  } 
+
+  .similar-products {
+    width: 90%;
+    margin: auto;
+    padding: 70px 0px;
+}
+.sub-products {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.subproduct-box {
+    width: 20%;
+}
+.subproduct-images {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.subproduct-images img {
+    width: 90%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    padding: 10px;
+}
+.subproduct-para {
+    width: 100%;
+    padding-top: 10px;
+}

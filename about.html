@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- ----------------------------navbar section----------------------------- -->
+   <section class="navbar">
+    <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="about.html" class="desktop-item">Company</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Company</label>
+              <ul class="drop-menu">
+                <li><a href="strategy.html">Strategy & Purpose</a></li>
+                <li><a href="product.html">Brands</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="product.html" class="desktop-item">Products</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Products</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <ul class="mega-links" style="border: none;">
+                        <li onclick="navigateToProduct(1)"><span>> Hydraulic Pumps</span></li>
+                        <li onclick="navigateToProduct(2)"><span>> Hydraulic Valves</span></li>
+                        <li onclick="navigateToProduct(3)"><span>> Power Packs</span></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="mega-links">
+                        <li onclick="navigateToProduct(4)"><span>> Hydraulic Fittings</span></li>
+                        <li onclick="navigateToProduct(5)"><span>> Industrail Valves</span></li>
+                        <li onclick="navigateToProduct(6)"><span>> Hydraulic Directional Control Valves</span></li>
+                    </ul>
+                </div>
+                </div>
+              </div>
+            </li>
+            <li>
+                <a href="industries.html" class="desktop-item">Industries</a>
+                <input type="checkbox" id="showDrop1">
+                <label for="showDrop1" class="mobile-item">Industries</label>
+                <ul class="drop-menu">
+                    <li><a href="industries.html">Power</a></li>
+                    <li><a href="industries.html">Steel</a></li>
+                    <li><a href="industries.html">Plastic</a></li>
+                    <li><a href="industries.html">Construction</a></li>
+                    <li><a href="industries.html">Mechine Tools</a></li>
+                    <li><a href="industries.html">Marine</a></li>
+                </ul>
+              </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+</section>
+    
+
+    <!-- ----------------------------- about section --------------------------- -->
+    <section class="about-banner">
+    </section>
+    <section class="about">
+        <div class="about-container">
+            <h1 class="about-content">About Hydro TORK</h1>
+            <div data-aos="zoom-in">
+                <div class="about-row">
+                    <div class="about-col">
+                        <p class="about-para">HYDRO TORK specializes in fabricating advanced hydraulic systems, leveraging top-tier hydraulic equipment to deliver unparalleled performance and reliability. The company also excels in automating industrial valves, ensuring precise and efficient control within various industrial applications. </p>
+                        <p class="about-para">By integrating cutting-edge technology and superior craftsmanship, HYDRO TORK provides innovative solutions that enhance productivity and operational efficiency for their clients.</p>
+                        <p class="about-para">Their commitment to quality and customer satisfaction has made
+                            them a preferred choice among professionals seeking dependable hydraulic solutions.</p>
+                    </div>
+                    <div class="about-col1">
+                        <div class="col-lg-4">
+                            <div class="about-carousel">
+                                <div>
+                                    <iframe src="images/about1.jpg" allowfullscreen frameborder="0"
+                                        name="slider1"></iframe>
+                                </div>
+                                <span>
+                                    <a href="images/about1.jpg" target="slider1"><img src="images/about1.jpg"></a>
+                                    <a href="images/about2.jpg" target="slider1"><img src="images/about2.jpg"></a>
+                                    <a href="images/about3.jpg" target="slider1"><img src="images/about3.jpg"></a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="who">
+        <div class="who-container">
+            <h1 class="who-title">Who We are</h1>
+            <p class="who-p">We are Hydrotrok, pioneers in advanced and sustainable water purification solutions. </p>
+            <div>
+                <div class="who-row">
+                    <div class="who-col" onclick="navigateToStrategyPurpose()" data-aos="fade-right" data-aos-delay="100">
+                        <div class="who-img">
+                            <img src="images/Strategy.jpg" alt="" width="380px" height="200px">
+                        </div>
+                        <div class="who-para">
+                            <h3 class="who-para-h3">Strategy & Purpose</h3>
+                            <div class="line"></div>
+                            <p class="who-para-p">
+                                Our strategy focuses on harnessing cutting-edge technology to develop
+                                sustainable water purification systems.
+                            </p>
+                            <h4 class="who-para-a">See Our Priorities ></h4>
+                        </div>
+                    </div>
+
+                    <div class="who-col" onclick="productsSection()" data-aos="fade-right" data-aos-delay="100">
+                        <div class="who-img">
+                            <img src="images/brand.jpg" alt="" width="353px" height="200px">
+                        </div>
+                        <div class="who-para">
+                            <h3 class="who-para-h3">Brands</h3>
+                            <div class="line"></div>
+                            <p class="who-para-p">Hydrotrok offers a diverse portfolio of brands designed to meet
+                                various water purification needs.
+                            </p>
+                            <h4 class="who-para-a">View Our Brands ></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

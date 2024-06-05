@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-banner {
+    width: 100%;
+}
+
+.contact-banner img {
+    max-width: 100%;
+}
+
+.home-container {
+    width: 95%;
+    margin: auto;
+}
+
+/* ---------------------------------social media------------------------------------- */
+.home-social-media {
+    margin-bottom: 50px;
+}
+
+.row-social-media {
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+
+.social-media-heading h1 {
+    color: #021b35;
+}
+
+.social-media-list {
+    margin-top: 15px;
+}
+
+.social-media-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-list ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.social-media-list ul a:hover {
+    text-decoration: underline;
+}
+
+.social-media-list ul li {
+    list-style-type: none;
+}
+
+.social-media-list ul li img {
+    width: 50px;
+}
+
+@media (min-width: 320px) {
+    .home-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .social-media-heading {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .home-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .social-media-heading {
+        width: 100%;
+    }
+}
+
+
+/* -------------------------------- footer -------------------------------------- */
+.detail-container {
+    width: 95%;
+    margin: auto;
+}
+
+.detail-col {
+    display: flex;
+}
+
+.details-info {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.head-deatail {
+    font-size: 20px;
+    color: #021b35;
+    display: flex;
+    margin-top: 20px;
+}
+
+.email-detail i {
+    font-size: 30px;
+    color: #ffcd11;
+    background-color: #021b35;
+    padding: 13px;
+    border-radius: 50%;
+    width: 60px;
+    text-align: center;
+}
+
+.address-icon {
+    width: 10%;
+}
+
+.address-details {
+    width: 85%;
+}
+
+.carousel {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    color: white;
+    /* border: 1px solid #ccc; */
+    cursor: pointer;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title a {
+    text-decoration: none;
+    color: #fffbfb;
+}
+
+.title a:hover {
+    color: #ffcd11;
+}
+
+.carousel-item .title {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    top: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding: 5px; */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    /* text-align: center; */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.carousel-item:hover .title {
+    opacity: 1;
+}
+
+.carousel-item:nth-child(1) {
+    transform: rotateY(0deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(2) {
+    transform: rotateY(120deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(3) {
+    transform: rotateY(240deg) translateZ(200px);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@media (min-width: 320px) {
+    .detail-container {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    .detail-row {
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-col {
+        width: 100% !important;
+        margin-left: -50px;
+    }
+
+    .email-detail {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .email-detail i {
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .head-deatail {
+        font-size: 13px;
+        font-weight: bold;
+        margin-left: -20px;
+    }
+
+    .carousel-item {
+        width: 80%;
+        height: 80%;
+    }
+
+    .carousel-item img {
+        width: 80%;
+        height: 100%;
+    }
+
+    .carousel-inner {
+        width: 72%;
+    }
+}
+
+@media (min-width: 760px) {
+    .detail-row {
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-col {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .carousel {
+        margin-left: -50px;
+    }
+
+    .email-detail {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .email-detail i {
+        font-size: 25px;
+        /* padding: 25px; */
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .head-deatail {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .carousel-item {
+        width: 80%;
+        height: 80%;
+        line-height: 100px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel {
+        perspective: 800px;
+        width: 40%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        animation: spin 10s infinite linear;
+        transition: transform 0.5s ease;
+    }
+}
+
+@media (min-width: 1020px) {
+    .detail-row {
+        display: flex;
+    }
+
+    .detail-col {
+        width: 50% !important;
+        margin: auto;
+    }
+
+    
+
+    .email-detail {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .email-detail i {
+        font-size: 25px;
+        width: 50px;
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+    .head-deatail {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .carousel {
+        perspective: 1000px;
+        width: 300px;
+        height: 270px;
+        margin: auto;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

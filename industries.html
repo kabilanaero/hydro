@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/industries.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ----------------------------navbar section----------------------------- -->
+    <section class="navbar">
+        <nav>
+            <div class="wrapper">
+              <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="about.html" class="desktop-item">Company</a>
+                  <input type="checkbox" id="showDrop">
+                  <label for="showDrop" class="mobile-item">Company</label>
+                  <ul class="drop-menu">
+                    <li><a href="strategy.html">Strategy & Purpose</a></li>
+                    <li><a href="product.html">Brands</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="product.html" class="desktop-item">Products</a>
+                  <input type="checkbox" id="showMega">
+                  <label for="showMega" class="mobile-item">Products</label>
+                  <div class="mega-box">
+                    <div class="content">
+                      <div class="row">
+                        <ul class="mega-links" style="border: none;">
+                            <li onclick="navigateToProduct(1)"><span>> Hydraulic Pumps</span></li>
+                            <li onclick="navigateToProduct(2)"><span>> Hydraulic Valves</span></li>
+                            <li onclick="navigateToProduct(3)"><span>> Power Packs</span></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="mega-links">
+                            <li onclick="navigateToProduct(4)"><span>> Hydraulic Fittings</span></li>
+                            <li onclick="navigateToProduct(5)"><span>> Industrail Valves</span></li>
+                            <li onclick="navigateToProduct(6)"><span>> Hydraulic Directional Control Valves</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <a href="industries.html" class="desktop-item">Industries</a>
+                    <input type="checkbox" id="showDrop1">
+                    <label for="showDrop1" class="mobile-item">Industries</label>
+                    <ul class="drop-menu">
+                        <li><a href="industries.html">Power</a></li>
+                        <li><a href="industries.html">Steel</a></li>
+                        <li><a href="industries.html">Plastic</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mechine Tools</a></li>
+                        <li><a href="industries.html">Marine</a></li>
+                    </ul>
+                  </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+          </nav>
+    </section>
+
+    <section class="indu-banner">
+    </section>
+
+    <section class="industries-banner">
+        <div class="industries-banner-container">
+            <div class="industries-banner-row">
+                <div class="industries-banner-col">
+                    <h2 class="industries-h2">Industries</h2>
+                    <p class="industries-p">Hydro TORK Limited believes in providing most suitable and cost effective
+                        solutions for all the
+                        hydraulic applications. We have most experienced application engineering team of 40 engineers
+                        working relentlessly on reducing cost and improving the performance of hydraulics in various
+                        applications.
+                    </p>
+                    <p class="industries-p">We have more than five decades of experience in handling applications like
+                        Hydro Electric Power
+                        Generation, Thermal Power, Wind, Solar, Steel Mills, Machine Tools, Plastics, Marine, and Heavy
+                        Engineering and so on.
+                    </p>
+                    <p class="industries-p">Our solutions are from concept to commissioning stage, depend on us, we will
+                        delight you with our
+                        excellent attention, service & support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Steel</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/steel.jpeg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Plastics</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/plastics.jpeg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Construction</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/construction.jpeg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Machine Tools</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/Machine tools.jpeg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Marine</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/marine.jpeg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Agriculture</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/agriculture.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Scrubbing industries</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/scrubbers industrial.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prodfoot-section">
+        <div class="prodfoot-container">
+            <h1>The Products available in this company, will also be available in our company</h1>
+            <div class="prodfoot-row">
+
+                <div class="product_logo" onclick="navigateToProcut12()">
+                    <img src="images/yuken logo.png" alt="img" srcset="" width="240px" height="200px">
+
+                </div>
+                <div class="product_logo" onclick="navigateToProcut12()">
+                    <img src="images/rexroth logo.png" alt="img" srcset="" width="240px" height="200px">
+
+                </div>
+                <div class="product_logo" onclick="navigateToProcut12()">
+                    <img src="images/eaton logo.png" alt="img" srcset="" width="240px" height="200px">
+
+                </div>
+                <div class="product_logo" onclick="navigateToProcut12()">
+                    <img src="images/Parker logo.png" alt="img" srcset="" width="240px" height="200px">
+                </div>
+                <div class="product_logo" onclick="navigateToProcut12()">
+                    <img src="images/veljan.jpeg" alt="img" srcset="" width="240px" height="200px">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-btn').checked = false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

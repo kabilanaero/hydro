@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/strategy.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ----------------------------navbar section----------------------------- -->
+    <section class="navbar">
+        <nav>
+            <div class="wrapper">
+              <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="about.html" class="desktop-item">Company</a>
+                  <input type="checkbox" id="showDrop">
+                  <label for="showDrop" class="mobile-item">Company</label>
+                  <ul class="drop-menu">
+                    <li><a href="strategy.html">Strategy & Purpose</a></li>
+                    <li><a href="product.html">Brands</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="product.html" class="desktop-item">Products</a>
+                  <input type="checkbox" id="showMega">
+                  <label for="showMega" class="mobile-item">Products</label>
+                  <div class="mega-box">
+                    <div class="content">
+                      <div class="row">
+                        <ul class="mega-links" style="border: none;">
+                            <li onclick="navigateToProduct(1)"><span>> Hydraulic Pumps</span></li>
+                            <li onclick="navigateToProduct(2)"><span>> Hydraulic Valves</span></li>
+                            <li onclick="navigateToProduct(3)"><span>> Power Packs</span></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="mega-links">
+                            <li onclick="navigateToProduct(4)"><span>> Hydraulic Fittings</span></li>
+                            <li onclick="navigateToProduct(5)"><span>> Industrail Valves</span></li>
+                            <li onclick="navigateToProduct(6)"><span>> Hydraulic Directional Control Valves</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <a href="industries.html" class="desktop-item">Industries</a>
+                    <input type="checkbox" id="showDrop1">
+                    <label for="showDrop1" class="mobile-item">Industries</label>
+                    <ul class="drop-menu">
+                        <li><a href="industries.html">Power</a></li>
+                        <li><a href="industries.html">Steel</a></li>
+                        <li><a href="industries.html">Plastic</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mechine Tools</a></li>
+                        <li><a href="industries.html">Marine</a></li>
+                    </ul>
+                  </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+          </nav>
+    </section>
+
+    <div class="strategy-banner">
+    </div>
+    <section class="strategy-section2">
+        <div class="strategy-container">
+            <div class="strategy-row">
+                <div class="strategy-col1">
+                    <div class="strategy-col1-head">
+                        <h1> Strategy & Purpose</h1>
+                    </div>
+                    <div class="strategy-col-gap1">
+                        <h2> Where We're Headed </h2> <br>
+                        <p class="strategy-para1">
+                            Our company strategy reflects our legacy and our continuing commitment
+                            to meet the needs of our customers and the communities in which we live
+                            and work. United by our Values, Hydro Tork employees around the world
+                            share a focused view of our business through the Operating & Execution
+                            Model, through which we are making strategic choices today to create
+                            profitable growth for tomorrow. Together, with our partners, we help our
+                            customers build a better, more sustainable world.
+                        </p>
+                        <div class="strategy-btn">
+                            <input type="button" id="strategy-btn" value="LEARN ABOUT OUR STRATRGY">
+                        </div>
+                    </div>
+                </div>
+                <div class="strategy-col2">
+                    <div class="strategy-col-gap-img1">
+                        <img src="images/col2.jpg" alt="strategy-example img" width="100%" height="400px">
+                    </div>
+                </div>
+                <div class="strategy-col3">
+                    <div class="strategy-col-gap-img2">
+                        <img src="images/col3.jpg" alt="strategy-example img" width="115%" height="500px">
+                    </div>
+                </div>
+                <div class="strategy-col4">
+                    <div class="strategy-col-gap2">
+                        <h2>Why We Do It</h2> <br>
+                        <p class="strategy-para2">
+                            For nearly 100 years, our products and services have helped improve the lives
+                            of people around the world. Our customers use our products to build the basic
+                            infrastructure that enables higher standards of living so that people have access
+                            to water, electricity, roads, bridges, hospitals, schools, and so much more. Our
+                            company strategy reflects our legacy and our continuing commitment to meet the
+                            needs of our customers and the communities in which we live and work. United by
+                            our Values, Hydro Tork employees around the world share a focused view of our
+                            business through the Operating & Execution Model, through which we are making
+                            strategic choices today to create profitable growth for tomorrow. Together with
+                            our partners, we help our customers build a better, more sustainable world.
+                        </p>
+                        <div class="strategy-btn">
+                            <input type="button" id="strategy-btn" value="LEARN ABOUT YOUR PURPOSE">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-btn').checked = false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
